@@ -19,7 +19,22 @@ sudo ln -s /usr/lib/libperl.so.5.14 /usr/lib/libperl.so
 ```
 ###Node.js (on Debian Wheezy)
 ```shell
-sudo apt install nodejs npm -y
+#sudo apt install nodejs npm -y
+
+NODE_VERSION="v0.9.9"
+
+# Download
+curl -LO http://nodejs.org/dist/$NODE_VERSION/node-$NODE_VERSION-linux-x64.tar.gz
+
+# uncompress
+tar xzf node-$NODE_VERSION-linux-x64.tar.gz
+
+# selective copy
+cp -R ./node-$NODE_VERSION-linux-x64/bin/* /usr/local/bin
+cp -R ./node-$NODE_VERSION-linux-x64/lib/* /usr/local/lib
+cp -R ./node-$NODE_VERSION-linux-x64/include/* /usr/local/include
+cp -R ./node-$NODE_VERSION-linux-x64/share/* /usr/local/share
+
 ```
 ###Node.js (on Raspbian)
 ```shell
