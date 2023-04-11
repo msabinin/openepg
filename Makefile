@@ -34,7 +34,7 @@ perl/DBD-SQLite-1.42:
 	set -e; \
 	. ./perl-vars.sh; \
 	cd $(CWD)/perl/; \
-	curl -L http://pkgs.fedoraproject.org/repo/pkgs/perl-DBD-SQLite/DBD-SQLite-1.42.tar.gz/86cfaf477cb9ddc39508f74f4268fc79/DBD-SQLite-1.42.tar.gz -s -o DBD-SQLite-1.42.tar.gz; \
+	curl -L https://src.fedoraproject.org/repo/pkgs/perl-DBD-SQLite/DBD-SQLite-1.42.tar.gz/86cfaf477cb9ddc39508f74f4268fc79/DBD-SQLite-1.42.tar.gz s -o DBD-SQLite-1.42.tar.gz; \
 	tar xvzf DBD-SQLite-1.42.tar.gz; \
 	cd $(CWD)/perl/DBD-SQLite-1.42/; \
 	perl Makefile.PL INSTALL_BASE=$(CWD)/perl/lib/; \
@@ -47,7 +47,7 @@ perl/DVB-Carousel-0.22:
 	set -e; \
 	. ./perl-vars.sh; \
 	cd $(CWD)/perl/; \
-	curl -L http://mirror.nus.edu.sg/CPAN/modules/by-module/DVB/DVB-Carousel-0.22.tar.gz -s -o DVB-Carousel-0.22.tar.gz; \
+	curl -L https://cpan.metacpan.org/authors/id/N/NA/NABOJ/DVB-Carousel-0.22.tar.gz -s -o DVB-Carousel-0.22.tar.gz; \
 	tar xvzf DVB-Carousel-0.22.tar.gz; \
 	cd $(CWD)/perl/DVB-Carousel-0.22/; \
 	perl Makefile.PL INSTALL_BASE=$(CWD)/perl/lib/; \
@@ -60,7 +60,7 @@ perl/DVB-Epg-0.51:
 	set -e; \
 	. ./perl-vars.sh; \
 	cd $(CWD)/perl/; \
-	curl -L http://mirror.nus.edu.sg/CPAN/modules/by-module/DVB/DVB-Epg-0.51.tar.gz -s -o DVB-Epg-0.51.tar.gz; \
+	curl -L https://cpan.metacpan.org/authors/id/N/NA/NABOJ/DVB-Epg-0.51.tar.gz -s -o DVB-Epg-0.51.tar.gz; \
 	tar xvzf DVB-Epg-0.51.tar.gz; \
 	cd $(CWD)/perl/DVB-Epg-0.51/; \
 	perl Makefile.PL INSTALL_BASE=$(CWD)/perl/lib/; \
