@@ -19,7 +19,7 @@ sudo ln -s /usr/lib/libperl.so.5.14 /usr/lib/libperl.so
 ```
 ###Node.js (on Debian Wheezy)
 ```shell
-sudo apt-get install nodejs
+sudo apt install nodejs npm -y
 ```
 ###Node.js (on Raspbian)
 ```shell
